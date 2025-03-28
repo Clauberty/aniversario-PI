@@ -9,8 +9,9 @@
 
 <link rel="stylesheet" href="/style/style.css">
 <body>
+
     <section class="campo_cadastro">
-        <i class="fa-regular fa-circle-left"></i>
+        <i onclick="fechar_cadastro();" class="fa-regular fa-circle-left"></i>
         <h1 class="titulo_cadastro" >CADASTRO <BR> DE <BR> FUNCIONARIOS</h1>
         <div class= "cadastro">
         <p>Nome</p>
@@ -19,6 +20,9 @@
         <input type="date" class="inserir_data" >
         <p>Área de profissão</p>
         <input type="text" class="inserir_area"  placeholder="inserir área">
+        <div class="abrir_cadastro">
+            <p onclick="abrir_cadastro(); ">cadastrar</p>
+        </div>
 
         </div>
     </section>
@@ -26,5 +30,7 @@
 
     </section>
    
+
+    <script src="/js/proj.js"></script>
 </body>
 </html>
